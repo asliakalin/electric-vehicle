@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EB000000"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E637993A"
+        android:backgroundTint="#8BC34A"
+        android:text="Scheduling                                Charging Session"
+        android:textAlignment="center"
+        android:textColor="#EBFFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="334dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="40dp"
+            android:text="Set as my weekly scheduling time"
+            android:textColor="#EBFFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/button3" />
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="416dp"
+            android:layout_height="310dp"
+            android:background="#EBFFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/time"
+            android:layout_width="113dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/colorPrimary"
+            android:backgroundTint="#FFFFFF"
+            android:entries="@array/times"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+
+        <Spinner
+            android:id="@+id/duration"
+            android:layout_width="122dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:background="#FFFFFF"
+            android:backgroundTint="#FCFFFFFF"
+            android:clickable="true"
+            android:entries="@array/durations"
+            android:focusable="true"
+            android:foregroundTint="#F5FFFFFF"
+            android:orientation="vertical"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/time"
+            app:layout_constraintTop_toTopOf="@+id/time" />
+
+        <TextView
+            android:layout_width="302dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="320dp"
+            android:text="Select time and duration below:"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/calendarView" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="108dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="44dp"
+            android:onClick="sendMessage"
+            android:text="Schedule"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/time" />
+
+        <Switch
+            android:id="@+id/switch8"
+            android:layout_width="330dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="40dp"
+            android:text="Send me text reminders"
+            android:textColor="#EBFFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/switch1"
+            app:layout_constraintTop_toTopOf="@+id/switch1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C9000000"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/settingsButton"
+        android:layout_width="208dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="70dp"
+        android:background="#E24F21"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/settings_button"
+        android:textColor="@android:color/background_light"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/myCarButton"
+        android:layout_width="208dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="8dp"
+        android:background="#D59B10"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/my_car"
+        android:textColor="@android:color/background_light"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/settingsButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/chargeButton"
+        android:layout_width="208dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="8dp"
+        android:background="#9C7AF324"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/charge_button"
+        android:textColor="@android:color/background_light"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/myCarButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/driveButton"
+        android:layout_width="208dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="8dp"
+        android:background="#009688"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/drive_button"
+        android:textColor="@android:color/background_light"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/chargeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/helpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        app:backgroundTint="#DCE7C358"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048"
+        app:srcCompat="@android:drawable/ic_menu_help" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="187dp"
+        android:layout_height="54dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/welcome_message"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.225"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.119" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="192dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/charge"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/driveButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

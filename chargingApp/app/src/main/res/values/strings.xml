@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name"> EV Home Charging App </string>
+    <string name="input_distance"> Enter travel distance  </string>
+    <string name="charge"> 67% </string>
+    <string name="welcome_message"> Hello, Asli! </string>
+    <string name="drive_button"> DRIVE </string>
+    <string name="charge_button"> CHARGE NOW </string>
+    <string name="settings_button"> SETTINGS </string>
+    <string name="my_car"> MY CAR </string>
+    <string name="settingsTitle"> Settings </string>
+    <string name="km_vs_miles"> Change distance settings for kilometers or miles: </string>
+    <string name="km"> Use km </string>
+    <string name="miles"> Use miles </string>
+    <string-array name="car_models">
+        <item> Nissan LEAF </item>
+        <item> Kia Soul EV </item>
+        <item> Tesla Model S </item>
+        <item> Tesla Model 3 </item>
+        <item> Chevrolet Volt </item>
+        <item> Tesla Model X </item>
+        <item> Other </item>
+    </string-array>
+    <string-array name="durations">
+        <item> 15 minutes </item>
+        <item> 30 minutes </item>
+        <item> 45 minutes </item>
+        <item> 60 minutes </item>
+    </string-array>
+    <string-array name="times">
+        <item> 8:00 AM </item>
+        <item> 9:00 AM </item>
+        <item> 10:00 AM </item>
+        <item> 11:00 AM </item>
+        <item> 12:00 PM </item>
+        <item> 1:00 PM </item>
+        <item> 2:00 PM </item>
+        <item> 3:00 PM </item>
+        <item> 4:00 PM </item>
+        <item> 5:00 PM </item>
+        <item> 6:00 PM </item>
+        <item> 7:00 PM </item>
+        <item> 8:00 PM </item>
+        <item> 9:00 PM </item>
+        <item> 10:00 PM </item>
+
+    </string-array>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_help_center">HelpCenter</string>
+</resources>
